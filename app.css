@@ -137,17 +137,13 @@ a {
 
 .logo>img {
   width:140px;
+  height: 140px;
   margin-right:50px;
   z-index:10;
 }
 
 .logo>span>span {
-	color: brown;
-}
-
-.logo>i {
-	color: brown;
-	margin-right: 15px;
+	color: skyblue;
 }
 
 .logo-small {
