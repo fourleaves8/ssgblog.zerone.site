@@ -135,6 +135,12 @@ a {
 	font-size: 4rem;
 }
 
+.logo>img {
+  width:140px;
+  margin-right:50px;
+  z-index:10;
+}
+
 .logo>span>span {
 	color: brown;
 }
