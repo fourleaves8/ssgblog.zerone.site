@@ -19,10 +19,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>게시물 상세페이지</title>
 
-<!-- loading fontawsome begins -->
+<!-- loading fontawsome -->
 <link rel="stylesheet"
 	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-<!-- loading fontawsome ends -->
+<!------------------------>
 
 <link rel="stylesheet" href="app.css" />
 <meta name="google-site-verification"
@@ -41,41 +41,41 @@
 			</div>
 		</header>
 		<!-- logobar ends -->
-		<!-- menubar begins -->
+
+		<!--menubar begins-->
 		<header class="menu-bar con-min-width">
 			<div class="con height-100p">
 				<nav class="menu-bar__menu-1">
 					<ul class="flex">
 						<li><a href="index.html" class="block"> <i
-								class="fas fa-home"></i> <span>HOME</span>
+								class="fas fa-home"></i>
+								<div>HOME</div>
+						</a></li>
+						<li><a href="" class="block"> <i class="fas fa-user"></i>
+								<div>ABOUT</div>
 						</a></li>
 						<li><a href="" class="block"> <i class="fas fa-book-open"></i>
-								<span>ARTICLES</span>
+								<div>ARTICLES</div>
 						</a>
 							<ul><li><a href="article_list_notice_1.html" class="block"><i class="fas fa-exclamation-circle"></i> <span>NOTICE</span></a></li><li><a href="article_list_free_1.html" class="block"><i class="fas fa-comment-dots"></i> <span>FREE</span></a></li><li><a href="article_list_it_1.html" class="block"><i class="far fa-clipboard"></i> <span>IT</span></a></li>
 							</ul></li>
-						<li><a href="" class="block"> <i class="fas fa-link"></i>
-								<span>LINKS</span>
-						</a>
-							<ul>
-								<li><a href="" class="block"> <i
-										class="fab fa-blogger-b"></i> <span>Blog</span>
-								</a></li>
-								<li><a href="" class="block"> <i class="fab fa-github"></i>
-										<span>Github</span>
-								</a></li>
-							</ul></li>
-						<li><a href="" class="block"> <i
-								class="fas fa-chart-line"></i> <span>STATISTICS</span>
+						<li><a href="" class="block"> <i class="fas fa-archive"></i>
+								<div>ARCHIVE</div>
+						</a></li>
+						<li><a href="" class="block"> <i class="fas fa-tags"></i>
+								<div>TAG</div>
+						</a></li>
+						<li><a href="" class="block"> <i class="fas fa-search"></i>
+								<div>SEARCH</div>
 						</a></li>
 					</ul>
 				</nav>
 			</div>
 		</header>
-		<!-- menubar ends -->
+		<!--menubar ends-->
 
 		<!-- main begins -->
-		<main class="body flex-grow-1">
+		<div class="main flex-grow-1">
 			<section class="title-bar con-min-width">
 				<h1 class="con"><i class="fas fa-file-invoice"></i> <span>ARTICLE DETAIL</span></h1>
 			</section><!-- 토스트 UI 에디터, 자바스크립트 코어 -->
@@ -100,15 +100,31 @@
 	<div class="con">
 		<div class="article-detail">
 
-			<h2 class="article-detail__title"></h2>
+			<h3 class="article-detail__title">블로그 운영 시작합니다!</h3>
 
-			<div class="article-detail__sub-info flex">
-				<div class="article-detail__board-name">공지사항</div>
-				<div class="article-detail__reg-date">2021-01-04 00:30:31</div>
-				<div class="article-detail__writer">천승우</div>
+			<div class="article-detail__sub-info">
+
+				<span class="article-detail__board-name">공지사항
+					<span>|</span>
+				</span> <span class="article-detail__writer">천승우
+					<span>|</span>
+				</span> <span class="article-detail__reg-date">2021-01-08 01:19:13</span>
+
 			</div>
+			<div class="article-detail__body main-font">## 안녕하세요! 웹과 앱 개발을 공부하고 있는 초보 개발자 지망생 MilkPotato입니다
 
-			<div class="article-detail__body main-font">내용3</div>
+## 이 블로그는 제 개인 블로그이며, 제가 개발자가 필요한 다양한 지식들을 쌓아올리는 창고가 될거에요!
+
+## 사이트의 이름 Zero + One, "ZerOne"은 두가지 의미가 있답니다!
+
+### 첫째는, 
+    컴퓨터의 연산체계를 이루는 이진수, 0과1에 대해 알아가고 싶다는 의미,
+### 둘째는,  
+    0에서 시작한 개발자가 되기위한 제 도전이 1이 되어가는 과정을 보여줄거란 의미!
+
+## 힘든 여정이 되겠지만, 용기를 가지로 열심히 해볼게요~~!!
+
+# 방문해 주셔서 정말 감사합니다!</div>
 
 			<div class="article-detail__comment-box">
 				<div id="disqus_thread"></div>
@@ -130,32 +146,56 @@
 			<div class="article-detail__menu flex">
 				<a title=""
 					href="article_detail_0.html"
-					class="hover-underline none">&lt;
+					class="hover-bold none">&lt;
 					이전글</a> <a href="article_list_notice_1.html"
-					class="hover-underline ">목록</a>
+					class="hover-bold ">목록</a>
 				<a title=""
 					href="article_detail_0.html"
-					class="hover-underline none">다음글
+					class="hover-bold none">다음글
 					&gt;</a>
 			</div>
 		</div>
 	</div>
 </section>
-</main>
+</div>
 <!-- main ends -->
 
-<!--bottom bar begins-->
-<footer class="bottom-bar con-min-width">
-  <div class="con flex flex-ai-c">
-     <a href="#" class="logo logo-small flex flex-ai-c">
-      <img src="img/logo-face_circle.png" alt="">
-       <span>Zer<span>O</span>ne</span>
-    </a>
-    
+<!--footer begins-->
+<footer class="footer con-min-width">
+	<div class="con flex flex-ai-c flex-jc-sb">
+		<a href="index.html" class="logo logo-small flex flex-ai-c"> <img
+			src="img/logo-face_circle.png" alt=""> <span>Zer<span>O</span>ne
+		</span>
+		</a>
+		<div class="footer__site-info flex flex-ai-c">
+			<div class="footer__personal-info">
+				<span>MilkPotato</span> <span>|</span> <span> <i
+					class="far fa-envelope"></i> fourleaves8@gmail.com
+				</span> <span>|</span> <span><i class="fas fa-phone"></i> (+82)
+					010-4788-7980</span>
+			</div>
+			<div class="footer_copyright">
+				<span>2021</span> <i class="far fa-copyright"></i> <span>Seungwoo
+					Choen</span> <span>All rights reserved.</span>
+			</div>
+		</div>
+		<div class="footer__links">
+			<ul>
+				<li><a href="https://www.instagram.com/uzzb8/" target="_blank"> <i class="fab fa-instagram"></i> <span>Instagram</span>
+				</a></li>
+				<li><a href="https://github.com/fourleaves8" target="_blank">
+						<i class="fab fa-github"></i> <span>Github</span>
+				</a></li>
+				<li><a href="https://leaves4.tistory.com/" target="_blank">
+						<i class="fas fa-pencil-alt"></i> <span>Tistory</span>
+				</a></li>
+			</ul>
+		</div>
+	</div>
 </footer>
-<!--bottom bar ends-->
-
+<!--footer ends-->
 </div>
+
 <script src="app.js"></script>
 </body>
 </html>
