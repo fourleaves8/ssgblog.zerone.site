@@ -26,15 +26,15 @@ CREATE TABLE `article` (
   `updateDate` datetime NOT NULL,
   `title` char(200) NOT NULL,
   `body` text NOT NULL,
-  `userId` int(10) unsigned NOT NULL,
+  `memberId` int(10) unsigned NOT NULL,
   `boardId` int(10) unsigned NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4;
 
 /*Data for the table `article` */
 
-insert  into `article`(`id`,`regDate`,`updateDate`,`title`,`body`,`userId`,`boardId`) values 
-(1,'2020-12-30 18:30:44','2020-12-30 18:30:44','1강, SQL SELECT','# SELECT\r\n-데이터 조회기능\r\n\r\n# SELECT 예시\r\n```\r\nSELECT `column_name`\r\nFROM `table_name`\r\nWHERE `column_name` > 1 #조건\r\n```',1,3);
+insert  into `article`(`id`,`regDate`,`updateDate`,`title`,`body`,`memberId`,`boardId`) values 
+(1,'2021-01-08 01:19:13','2021-01-08 01:19:13','블로그 운영 시작합니다!','## 안녕하세요! 웹과 앱 개발을 공부하고 있는 초보 개발자 지망생 MilkPotato입니다\r\n\r\n## 이 블로그는 제 개인 블로그이며, 제가 개발자가 필요한 다양한 지식들을 쌓아올리는 창고가 될거에요!\r\n\r\n## 사이트의 이름 Zero + One, \"ZerOne\"은 두가지 의미가 있답니다!\r\n\r\n### 첫째는, \r\n    컴퓨터의 연산체계를 이루는 이진수, 0과1에 대해 알아가고 싶다는 의미,\r\n### 둘째는,  \r\n    0에서 시작한 개발자가 되기위한 제 도전이 1이 되어가는 과정을 보여줄거란 의미!\r\n\r\n## 힘든 여정이 되겠지만, 용기를 가지로 열심히 해볼게요~~!!\r\n\r\n# 방문해 주셔서 정말 감사합니다!',1,1);
 
 /*Table structure for table `board` */
 
@@ -52,15 +52,15 @@ CREATE TABLE `board` (
 /*Data for the table `board` */
 
 insert  into `board`(`id`,`regDate`,`updateDate`,`name`,`code`) values 
-(1,'2020-12-30 18:25:13','2020-12-30 18:25:13','공지사항','notice'),
-(2,'2020-12-30 18:25:13','2020-12-30 18:25:13','자유','free'),
-(3,'2020-12-30 18:25:51','2020-12-30 18:25:51','Java','it');
+(1,'2021-01-08 01:10:45','2021-01-08 01:10:45','공지사항','notice'),
+(2,'2021-01-08 01:10:45','2021-01-08 01:10:45','자유','free'),
+(3,'2021-01-08 01:10:45','2021-01-08 01:10:45','Java','it');
 
-/*Table structure for table `user` */
+/*Table structure for table `member` */
 
-DROP TABLE IF EXISTS `user`;
+DROP TABLE IF EXISTS `member`;
 
-CREATE TABLE `user` (
+CREATE TABLE `member` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `regDate` datetime NOT NULL,
   `updateDate` datetime NOT NULL,
@@ -70,10 +70,10 @@ CREATE TABLE `user` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4;
 
-/*Data for the table `user` */
+/*Data for the table `member` */
 
-insert  into `user`(`id`,`regDate`,`updateDate`,`accountName`,`accountPw`,`name`) values 
-(1,'2020-12-30 18:25:51','2020-12-30 18:25:51','admin','admin','천승우');
+insert  into `member`(`id`,`regDate`,`updateDate`,`accountName`,`accountPw`,`name`) values 
+(1,'2021-01-08 01:10:45','2021-01-08 01:10:45','fourleaves8','admin','천승우');
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
 /*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
